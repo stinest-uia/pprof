@@ -6,7 +6,7 @@ import (
     "log"
     "os"
     "unicode"
-    "github.com/pkg/profile"
+   //"github.com/pkg/profile"
 )
 
 func readbyte(r io.Reader) (rune, error) {
@@ -18,7 +18,7 @@ func readbyte(r io.Reader) (rune, error) {
 func main() {
 
     // Generering av profiler; kun en aktivert av gangen
-    defer profile.Start(profile.CPUProfile, profile.ProfilePath(".")).Stop()
+    //defer profile.Start(profile.CPUProfile, profile.ProfilePath(".")).Stop()
     //defer profile.Start(profile.MemProfile, profile.ProfilePath(".")).Stop()
     //defer profile.Start(profile.MemProfile, profile.MemProfileRate(1), profile.ProfilePath(".")).Stop()
 
